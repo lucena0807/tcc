@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="card.css"> <link rel="stylesheet" href="sobre.css">
+    <title>Contatos - NewGen Leaders</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+          <div class="container-fluid">
+            <img src="img/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24" class="mr-10">
+                <a class="navbar-brand" href="#">NewGen Leaders</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#" role="button" aria-expanded="false">
+                    Home
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tecnologia
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-success">
+                      <li><a class="dropdown-item" href="#">HTML</a></li>
+                      <li><a class="dropdown-item" href="#">CSS</a></li>
+                      <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                      <li><a class="dropdown-item" href="#">React</a></li>
+                      <li><a class="dropdown-item" href="#">GIT</a></li>
+                  </ul>  
+                </li>
+                <a class="nav-link" href="#" role="button" aria-expanded="false">
+                  Cursos
+                </a>
+                <a class="nav-link" href="#" role="button" aria-expanded="false">
+                  Sobre
+                </a>
+                <a class="nav-link" href="#" role="button" aria-expanded="false">
+                  Contatos
+                </a>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-black" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <main>
+        <form class="contato">
+            <h1 class="titulo">ENTRE EM CONTATO CONOSCO</h1>
+            <div class="campo-duplo">
+                <div class="campo">
+                    <input type="text" id="nomesobrenome" class="input-padrao" required placeholder="Nome e sobrenome">
+                    <i class='fas fa-user'></i>
+                </div>
+
+                <div class="campo">
+                    <input type="email" id="email" class="input-padrao" required placeholder="E-mail">
+                    <i class='fas fa-envelope'></i>
+                </div>
+            </div>
+            
+            <div class="campo-duplo">
+                <div class="campo">
+                    <input type="tel" id="telefone" class="input-padrao" required placeholder="Número com DDD para contato">
+                    <i class='fas fa-phone-alt'></i>
+                </div>
+
+                <div class="campo">
+                    <input type="text" name="assunto" placeholder="Assunto">
+                    <i class="material-icons">forum</i>
+                </div>
+            </div>
+
+            <div class="preferencia-contato">
+                <p class="pergunta-escolha">Como prefere nosso contato?</p>
+                <label class="escolha" for="email-choice"><input type="radio" name="contact-choice" id="radio-whatsapp"><span>E-mail</span></label>
+
+                <label class="escolha" for="phone-choice"><input type="radio" name="contact-choice" id="phone-choice"><span>Telefone</span></label>
+
+                <label class="escolha" for="whatsapp-choice"><input type="radio" name="contact-choice" id="whatsapp-choice"><span>Whatsapp</span></label>
+            </div>
+
+            <div class="mensagem">
+                <textarea id="mensagem" class="input-padrao" required placeholder="Digite a sua mensagem"></textarea>
+                <i class='material-icons'>message</i>
+            </div>
+
+            <label class="checkbox"><input type="checkbox" id="checkbox"><span>Gostaria de receber nossas novidades por e-mail?</span></label>
+
+            <div class="botao-enviar">
+                <button type="submit">Enviar mensagem</button>
+                <span></span>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div id="foo1">
+            <div id="a1">   
+                <ul>
+                    <li> <a href="#">Cursos</a> </li>
+                    <li> <a href="#">Sobre</a> </li>
+                    <li> <a href="#">Contatos</a> </li>
+                    <li> <a href="#">Login</a> </li>
+                </ul>
+            </div>
+            <div id="a2">
+                <p><strong>𝙽𝚎𝚠𝙶𝚎𝚗 𝙻𝚎𝚊𝚍𝚎𝚛𝚜</strong> é otimizado para aprendizado. Exemplos simplificados para melhorar a leitura e compreensão básica.
+                    Tutoriais, referências e exemplos são constantemente revisados ​​para evitar erros, mas não podemos garantir a correção total de todo o conteúdo.
+                    Ao usar este site, você concorda em ter lido e aceito nossos termos de uso, cookies e política de privacidade.</p>
+            </div>
+            <div id="a1">
+                <a href=""><img src="img/whatsapp.png" alt="" width="20%" height="50vh"></a>
+                <a href=""><img src="img/instagram.png" alt="" width="20%" height="50vh"></a>
+                <a href=""><img src="img/facebook.png" alt="" width="20%" height="50vh"></a>
+                <a href=""><img src="img/linkedin.png" alt="" width="20%" height="50vh"></a>
+            </div>
+        </div>
+        <div id="foo2">
+            <strong>© Copyright NewGen Leaders - 2022</strong>
+        </div>
+    </footer>
+</body>
+</html>

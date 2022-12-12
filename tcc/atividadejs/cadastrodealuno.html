@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRO MÉDIA</title>
+</head>
+<body>
+    <STyle>
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        h1{
+            text-align: center;
+        }
+           </STyle>
+           
+</body>
+ <h1>Cadastro de Aluno</h1>
+ <button onclick="Chamausuario()">Cadastro Média</button>
+
+
+
+<script>
+
+    function Chamausuario(){
+        var nome = prompt("Qual nome do Aluno?");
+        var N1 = Number (prompt("Qual a sua Primeira nota?"));
+        var N2 = Number (prompt("Qual a Sua segunda nota?"));
+        var total = (N1 + N2)/2;
+
+        if (total => 7) {
+            document.write(`Aluno: ${nome}<br>  <br>Média:  ${total} <br> <b>Situação</b> Aprovado <br>`)
+        } else{
+            document.write(`Aluno: ${nome}<br>  <br>Média:  ${total} <br> <b>Situação</b> Aprovado <br>`)
+        }
+       
+ alert("Passou")
+    }
+</script
+</html>

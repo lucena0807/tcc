@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    padding: 0;
+    min-height: 100vh;
+    background-color: #f2f4f8;
+    align-items: center;
+    justify-content: center;
+}
+::selection{
+    color: #fff;
+    background-color: #198754;
+}
+main{
+    margin-top: 100px;
+    width: 60%; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    background-color: #fff;
+    border-radius: 5px;
+    
+}
+main h1{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    margin-bottom: 4%; 
+}
+main form{
+    margin: 0px 30px;
+    width: 60%;
+    margin: 0 auto; 
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.05),
+                -10px -10px  10px rgba(0,0,0,0.05);
+    box-sizing: content-box;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+
+}
+main form:disabled{
+    pointer-events: none;
+    opacity: 0.7;
+}
+form .campo-duplo{
+    display: flex;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+.campo-duplo .campo{
+    height: 50px;
+    display: flex;
+    position: relative;
+    width: calc(100% / 2 - 7px);
+}
+.preferencia-contato{
+    width: 100%;
+    height: 60px;
+    margin: -14px 0 10px 2.5px;
+    background-color: white;
+}
+.preferencia-contato .escolha{
+    margin: 0 12px 0 0;
+}
+.pergunta-escolha{
+    margin-bottom: 5px;
+}
+span{
+    margin-top: 100%;
+    margin-left: 5px;
+}
+input{
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}
+main form i{
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    color: #ccc;
+    font-size: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+form .campo input,
+form .mensagem textarea{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 18px 0 48px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.campo input::placeholder,
+.mensagem textarea::placeholder{
+    color: #ccc;
+}
+.campo input:focus,
+.mensagem textarea:focus{
+    padding-left: 47px;
+    border: 2px solid #198754;
+}
+.campo input:focus ~ i,
+.mensagem textarea:focus ~ i{
+    color: #198754;
+}
+form .mensagem{
+    position: relative;
+}
+form .mensagem i{
+    top: 30px;
+    font-size: 20px;
+}
+form .mensagem textarea{
+    min-height: 130px;
+    max-height: 230px;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 15px 20px 0 48px;
+}
+form .mensagem textarea::-webkit-scrollbar{
+    width: 0px;
+}
+.mensagem textarea:focus{
+    padding-top: 14px;
+}
+form .botao-enviar{
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+}
+.botao-enviar button{
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 13px 25px;
+    background: #198754;
+    transition: background 0.3s ease;
+}
+.botao-enviar button:hover{
+    background: #28a068;
+}
+.botao-enviar span{
+    font-size: 17px;
+    margin-left: 30px;
+    display: none;
+}
+footer{
+    position: relative;
+    width: 100%; height: 35vh;
+}
+#foo1{
+    width: 100%; height: 30vh; background-color: #198754; display: flex;
+}
+#a1{
+    width: 30%; height: 30vh;
+}
+#a1 ul{
+    display: flex; text-align: center; margin-top: 0vh; justify-content: center;
+}
+#a1 ul li{
+    list-style: none; margin-right: 20px;
+}
+#a1 ul li a{
+    font-size: 1.2rem; color: rgba(255, 255, 255, 0.562); text-decoration: none;
+}
+#a1 ul li a:hover{
+    font-size: 1.2rem; color: rgba(255, 255, 255, 0.842); text-decoration: none;
+}
+#a2{
+    width: 40%; height: 30vh;
+}
+#a2 p{
+    text-align: center; margin-top: 5vh; color: rgba(255, 255, 255, 0.842);
+}
+#a1{
+  display: flex; justify-content: center; flex-direction: column; align-items: center;
+}
+#a1 a img{
+  margin-left: 5px; margin-top: 10px;
+}
+#foo2{
+    width: 100%; height: 5vh; background-color: #2b694c; color: rgba(255, 255, 255, 0.842); text-align: center;
+}
+@media (max-width: 800px) {
+    main{
+        width: 90%;
+    }
+    main h1{
+        text-align: center;
+    }
+    main form{
+        margin: 35px 0px;
+        width: 90%; 
+        padding: 1.2rem;
+    }
+    form .campo-duplo{
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    form .campo-duplo .campo{
+        width: 100%;
+        height: 45px;
+        margin-bottom: 20px;
+    }
+    form .mensagem textarea{
+        resize: none;
+    }
+    form .botao-enviar{
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .botao-enviar button{
+        width: 100%;
+        padding: 11px 0;
+        font-size: 16px;
+    }
+    #foo1{
+        display: block;
+    }
+    footer{
+        height: 95vh;background-color: #198754;
+    }
+    #a1{
+        width: 100%; background-color: #198754;
+    }
+    #a2{
+        width: 100%; background-color: #198754;
+    }
+    #foo2{
+        margin-top: 65vh;
+    }
+}

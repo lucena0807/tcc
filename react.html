@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="react.css">
+    <link rel="icon" href="img/11.svg" alt="Ícone NewGen Leaders">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <title>React - NewGen Leaders</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+          <div class="container-fluid">
+            <img src="img/8.svg" alt="Logotipo NewGen Leaders" width="100" height="41" class="mr-10">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html" role="button" aria-expanded="false">
+                    Home
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tecnologia
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-success">
+                      <li><a class="dropdown-item" href="react.html">HTML</a></li>
+                      <li><a class="dropdown-item" href="react.html">CSS</a></li>
+                      <li><a class="dropdown-item" href="react.html">JavaScript</a></li>
+                      <li><a class="dropdown-item" href="react.html">React</a></li>
+                      <li><a class="dropdown-item" href="react.html">GIT</a></li>
+                  </ul>  
+                </li>
+                <a class="nav-link" href="caixa.html" role="button" aria-expanded="false">
+                  Cursos
+                </a>
+                <a class="nav-link" href="sobrenos.html" role="button" aria-expanded="false">
+                  Sobre
+                </a>
+                <a class="nav-link" href="contato.html" role="button" aria-expanded="false">
+                  Contatos
+                </a>
+                <a class="nav-link" href="log.html" role="button" aria-expanded="false">
+                  Login
+                </a>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Pesquisar por..." aria-label="Search">
+                <button class="btn btn-outline-black" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <main>
+        <div class="principal">
+            <h1 class="titulo-principal">React: O que é, como funciona e React vs React Native</h1>
+            <div class="imagem-topo">
+                <img src="img/front-end-com-react.jpg" alt="Meme Front-end com e sem React" width="400px" height="250px">
+            </div>
+            <p class="assunto-topo">
+                Neste artigo, falaremos sobre o React: a biblioteca front-end de JavaScript mais popular do mercado para o desenvolvimento de interfaces de usuário (UI). Entenda um pouco mais sobre o que é o React, como ele funciona, React vs React Native e suas características. <br>
+                <br>
+                Bons estudos!
+            </p>
+        </div>
+        <div class="introducao">
+            <div class="intro">
+                <h2 class="primeiro-titulo">Introdução: O que é o React?</h2>
+                <p class="assunto-intro">
+                    React JS é uma biblioteca JavaScript para a criação de interfaces de usuário — ou UI (user interface). <br>
+                    <br>
+                    Criado em 2011 pelo time do Facebook, o React surgiu com o objetivo de otimizar a atualização e a sincronização de atividades simultâneas no feed de notícias da rede social, entre eles chat, status, listagem de contatos e outros. <br>
+                    <br>
+                    A princípio, todas essas atividades, chamadas de <b>estados</b>, tinham uma descrição muito complexa. Com o React, esta descrição torna-se mais simples, bem como também é simplificada a conexão entre HTML, CSS e JavaScript e todos os componentes de uma página. <br>
+                    <br>
+                    Por ter demonstrado grande eficiência, nos anos que se seguiram o React foi incorporado à interface de outras redes sociais do grupo, como o Instagram e, em 2013, seu código foi aberto à comunidade, dando início a sua popularização. <br>
+                    <br>
+                    Hoje, o React é uma das mais prestigiadas bibliotecas de JavaScript do mercado.
+                </p>
+            </div>
+            <div class="imagem-intro">
+                <img src="img/react-fundoazul.jpg" alt="Logotipo React com fundo azul" width="460px" height="250px">
+            </div>
+        </div>
+        <div class="comeco">
+            <div class="imagem-comeco">
+                <img src="img/react-space.jpg" alt="Logotipo React no Espaço" width="460px" height="250px">
+            </div>
+            <div class="comeco-funcionalidade">
+                <h2 class="segundo-titulo">Como funciona o React?</h2>
+                <p class="assunto-comeco">
+                    O React é uma biblioteca front-end e tem como um de seus objetivos facilitar a conexão entre diferentes partes de uma página, portanto seu funcionamento acontece através do que chamamos de <b>componentes</b>. <br>
+                    <br>
+                    Em outras palavras, podemos imaginar que o React divide uma tela em diversos componentes para, então, trabalhar sobre eles de maneira individual. <br>
+                    <br>
+                    Os componentes são utilizados para reaproveitamento de código e padronização de interface. <br>
+                    <br>
+                    Isso torna o React uma tecnologia muito flexível para a solução de problemas e para a construção de interfaces reutilizáveis, uma vez que cada um destes componentes pode ser manipulado de maneira distinta.
+                </p>
+            </div>
+        </div>
+        <div class="meio">
+            <div id="logotipo-react">
+                <div class="circulo circulo1"></div>
+                <div class="circulo circulo2"></div>
+                <div class="circulo circulo3"></div>
+            </div>
+            <div class="react-javascript">
+                <h2 class="terceiro-titulo">Como o React usa JavaScript?</h2>
+                <p class="assunto-meio">
+                    O React é uma biblioteca que utiliza a linguagem de programação JavaScript. <br>
+                    <br>
+                    O JS é uma das mais versáteis e populares linguagens de programação do mundo e conta com um grande número de bibliotecas e outras tecnologias que a utilizam. Entre elas, Node.js, Angular, VueJS, jQuery, Ember.js e, é claro, o React. <br>
+                    <br>
+                    Por essa razão, se você quer aprender a manipular esta biblioteca e extrair dela todo o seu potencial, é preciso antes ter uma sólida base de conhecimento em JavaScript, bem como em suas outras duas linguagens de marcação: HTML e CSS. <br>
+                    <br>
+                    Isso porque o React utiliza uma extensão alternativa ao JavaScript para descrever seus componentes. Esta sintaxe é chamada de <b>JSX</b>. <br>
+                    <br>
+                    O JSX, a grosso modo, é uma linguagem desenvolvida como uma mistura de HTML e JS. Seu objetivo é ser transposta para JS da maneira mais simplificada possível.
+                </p>
+            </div>
+            <div class="explicacao-cards">
+                <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-left: 7.6%;">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                            <h5 class="card-title">HTML</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">HyperText Markup Language</h6>
+                            <p class="card-text">A Linguagem de Marcação de Hipertexto (HyperText Markup Language) é uma linguagem de marcação que serve para dar significado e estrutura ao conteúdo web, como, por exemplo, definir cabeçalhos, parágrafos, fazer referências ou inserir imagens e vídeos.</p>
+                            <a href="react.html" class="card-link">Saiba mais sobre o HTML</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                            <h5 class="card-title">CSS</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Cascading Style Sheets</h6>
+                            <p class="card-text">A Folha de Estilo em Cascatas (Cascading Style Sheets) é uma linguagem de folha de estilos, que tem o papel de tornar uma página apresentável na web, relacionada diretamente com o design e aparência.</p>
+                            <a href="react.html" class="card-link">Saiba mais sobre o CSS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                            <h5 class="card-title">JavaScript</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">JS</h6>
+                            <p class="card-text">JS ou JavaScript é uma linguagem de programação de comportamento que permite a criação de conteúdos dinâmicos, controle de mídias e animações para deixar seu site mais interativo e interessante.</p>
+                            <a href="react.html" class="card-link">Saiba mais sobre o JavaScript</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="penultimo">
+            <div class="imagem-penultimo">
+                <img src="img/react native - iOS e Android.jpg" alt="React e React Native - iOS e Android" width="460px" height="250px">
+            </div>
+            <div class="penultimo-react-native">
+                <h2 class="quarto-titulo">Qual a diferença entre React e React Native?</h2>
+                <p class="assunto-penultimo">
+                    Esta é uma dúvida muito comum para quem ainda é novato no universo de front-end, JavaScript e seus recursos. <br>
+                    <br>
+                    O React é uma biblioteca criada para construir telas de forma declarativa. Ou seja: o React cria aplicações web para serem executadas em navegadores, sejam eles para desktop, mobile ou qualquer outro dispositivo. <br>
+                    <br>
+                    Para que essas aplicações possam ser transpostas para diferentes dispositivos, algumas bibliotecas são utilizadas — e o <b>React Native</b> é uma delas. <br>
+                    <br>
+                    O React Native é a biblioteca voltada para a criação de aplicativos mobile em Android e iOS. <br>
+                    <br>
+                    Em suma, a diferença entre React e React Native é que o primeiro diz respeito à maneira geral com que a biblioteca trabalha, enquanto o segundo traduz o JavaScript para a linguagem nativa do dispositivo, tanto para iOS quanto para Android.
+                </p>
+            </div>
+        </div>
+        <div class="ultimo">
+            <div class="ultimo-caracteristicas">
+                <h2 class="quinto-titulo">Características do React</h2>
+                <p class="assunto-ultimo">
+                    Sendo criado para simplificar um processo complexo, o React tem como uma de suas principais características a acessibilidade com que ele é compreendido. <br>
+                    <br>
+                    Abaixo estão listados alguns elementos importantes em sua composição e quais as suas funções.
+                </p>
+                <h2 class="quinto-titulo-menor">Componentes</h2>
+                <p class="assunto-ultimo">
+                    O uso de componentes é um dos pilares de sustentação do React. <br>
+                    <br>
+                    Para compreender e agir sobre uma determinada página, o React a quebra em pequenos pedaços, chamados de <b>componentes</b>, e os isola, sendo cada um deles independentes entre si perante a tecnologia. <br>
+                    <br>
+                    Estes componentes são reutilizáveis e, uma vez categorizados, podem ser reaproveitados em quaisquer páginas de um site ou aplicativo. <br>
+                    <br>
+                    Os componentes de uma página podem ser organizados, por exemplo, em <i>BarraLateral</i>, <i>MenuSuperior</i>, <i>BotaoChamada</i>, ou da maneira que o programador preferir.
+                    <br>
+                    Os componentes podem ser comparados às funções em JavaScript.
+                </p>
+                <h2 class="quinto-titulo-menor">Props (properties)</h2>
+                <p class="assunto-ultimo">
+                    Dentro dos componentes estão as propriedades, ou <i><b>props</i></b>. Estas props são objetos com várias informações que podem ser de variados tipos, como função, número ou string.
+                </p>
+                <h2 class="quinto-titulo-menor">State (estado)</h2>
+                <p class="assunto-ultimo">
+                    Assim como as propriedades, os estados, ou <i><b>states</i></b>, também são objetos ou informações, mas ao invés de serem <i>passadas</i> para o componente, eles são criados <i>dentro</i> do componente. <br>
+                    <br>
+                    Diferentemente das propriedades, os states são mutáveis, como por exemplo variáveis declaradas dentro de uma função. <br>
+                    <br>
+                </p>
+            </div>
+            <div class="componentes">
+                <h2 class="quinto-titulo-menor">Virtual DOM</h2>
+                <p class="assunto-ultimo">
+                    O Virtual DOM, ou VDOM, é uma representação em memória de um DOM <i>(Document Object Model)</i> real de uma interface. <br>
+                    <br>
+                    Na prática, DOM real é a estrutura que representa a camada visual de uma página. <br>
+                    <br>
+                    Para que fique mais claro, imagine o seguinte processo: <br>
+                    <br>
+                    Para atualizar uma página, o React primeiro salva suas alterações em memória, ou seja, em um ambiente chamado de Virtual DOM. Isso acontece porque manipular um DOM virtual é muito mais rápido do que manipular um DOM real — ou seja, a página que está sendo atualizada. <br>
+                    <br>
+                    Em front-end, a atualização de DOMs é extremamente corriqueira, uma vez que é através deles que as páginas de um site ou aplicativo são efetivamente atualizadas. <br>
+                    <br>
+                    Após criada esta estrutura virtual, o React a traduz para a tela real com o mínimo de processos possível, trazendo mais agilidade para a atualização. Este processo é chamado de <b>reconciliação</b>.
+                </p>
+                <h2 class="quinto-titulo-menor">JSX</h2>
+                <p class="assunto-ultimo">
+                    Criado pela equipe de desenvolvimento do React, o JSX é uma forma de criar elementos para serem utilizadas como templates de aplicações React. Basicamente, os elementos criados com o JSX são bem similares com código HTML e fornecem aos desenvolvedores uma forma mais simples e intuitiva de criar os componentes de uma aplicação. Porém, apesar de muito similar ao HTML, o JSX não é interpretado pelo navegador.
+                </p>
+            </div>
+        </div>
+        <div class="card mb-3" style="max-width: 530px; margin: 0 auto;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="img/foto-em-grupo-recife.jpeg" class="img-fluid rounded-start" alt="Foto em grupo">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Conheça nossa área de cursos</h5>
+                  <p class="card-text">Acesse já o nosso curso <b>TOTALMENTE GRATUITO</b> focado em React clicando no botão abaixo.</p>
+                  <a href="log.html" class="btn btn-primary">Acesse</a>
+                </div>
+              </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="foo1">
+            <div id="a1">   
+                <ul>
+                  <div>
+                    <li> <a href="caixa.html">Cursos </a> </li>
+                    <li> <a href="sobrenos.html"> Sobre</a> </li>
+                    <li> <a href="index.html"> Home</a> </li>
+                  </div>
+                  <div>
+                    <li> <a href="contato.html">Contatos</a> </li>
+                    <li> <a href="log.html">Login</a> </li>
+                    <li> <a href="#">Tecnologia</a> </li>
+                  </div>
+                </ul>
+            </div>
+            <div id="a2">
+                <p><b>NewGen Leaders</b> é otimizado para aprendizado. Exemplos simplificados para melhorar a leitura e compreensão básica.
+                    Tutoriais, referências e exemplos.
+                    Ao usar este site, você concorda em ter lido e aceito nossos termos de uso, cookies e política de privacidade.</p>
+            </div>
+            <div id="a1">
+              <div class="b1">
+                <a  target="_blank" href="https://wa.me/5581985882547?text=teste"><img src="img/whatsapp.png" alt="" width="33%" height="30vh"></a>
+                <a target="_blank"href="https://instagram.com/iosoficial?igshid=MTg0ZDhmNDA="><img src="img/instagram.png" alt="" width="33%" height="30vh"></a>
+              </div>
+              <div>
+                <a target="_blank" href="https://www.facebook.com/IOS.Oficial"><img src="img/simbolo-de-aplicativo-do-facebook.png" alt="" width="33%" height="30vh"></a> 
+                <a  target="_blank" href="https://www.linkedin.com/company/iosoficial/"><img src="img/linkdin.png" alt="" width="33%" height="30vh"></a> 
+              </div>
+            </div>
+        </div>
+        <div id="foo2">
+            <strong>© Copyright NewGen Leaders - 2022</strong>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+body{
+    background-color: white;
+    width:100%;
+    height: auto;
+    margin: auto;
+    overflow-x: hidden;
+}
+header{
+    position: fixed;  width: 100%; height:auto; z-index: 1000;
+}
+section{
+    width: 100%; height: 55vh;
+    background-image: url(img/3334911-desktop-source-code-and-wallpaper-by-coding-and-programming-grátis-foto.jpg);
+    background-attachment: fixed;
+}
+main{
+  position: relative;
+  top: 8%;
+  height: auto;
+  width: 100%;
+
+}
+
+
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.slide-container{
+  max-width: 300px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card{
+  border-radius: 25px;
+  background-color: #FFF;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #67c94a;
+  border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #67c94a;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+.card-image img{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #67c94a;
+  border-radius: 50%;
+}
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.description{
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+.button{
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #67c94a;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  list-style: none;
+  transition: all 0.3s ease;
+}
+.button:hover{
+  background: #6eff2b;
+}
+
+.button a{
+  color: white;
+  text-decoration: none;
+}
+.swiper-navBtn{
+  color: #6df836;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #3dff3d;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #5dfc48;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #2df848;
+}
+.slide-container.swiper{
+  width: 100%; display: contents; justify-content: space-evenly;
+  
+}
+.card-wrapper{
+  display: flex; width: 100%; justify-content: space-evenly;
+  margin: 50px 0;
+}
+.slide-content{
+  width: 100%;
+}
+.swiper-slide{
+  width: 18%;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+
+
+#carouselExampleInterval{
+  width: 50%; margin: auto;
+  margin-top: 2%;
+}
+#titulo{
+    font-size: 4rem; color: white;
+    position: absolute; top: 10%; left: 20%;
+    z-index: 1;
+    font-family: "poppins", sans-serif;
+}
+#subtitulo{
+    font-size: 2.5rem;
+    color: rgb(25 135 84);
+    margin-top: 3%;
+}
+.estilo{
+    font-size: 20px;
+    text-align: center;
+}
+
+footer{
+    position: relative;
+    width: 100%; height: 35vh;
+}
+#foo1{
+    width: 100%; height: 30vh; background-color: #198754; display: flex;
+}
+#a1{
+    width: 20%; height: 30vh;
+}
+#a1 ul{
+    display: block; text-align: center; margin-top: 2vh;
+}
+#a1 ul li{
+    list-style: none;
+}
+#a1 ul li a{
+    font-size: 1.6rem; color: rgba(255, 255, 255, 0.562); text-decoration: none;
+}
+#a1 ul li a:hover{
+    font-size: 1.6rem; color: rgba(255, 255, 255, 0.842); text-decoration: none;
+}
+#a2{
+    width: 60%; height: 30vh;
+}
+#a2 p{
+    text-align: center; margin-top: 5vh; color: rgba(255, 255, 255, 0.842);
+}
+#a1 a img{
+    margin-left: 3%; margin-top: 20vh;
+}
+#foo2{
+    width: 100%; height: 5vh; background-color: #2b694c; color: rgba(255, 255, 255, 0.842); text-align: center;
+
+}
+@media (max-width: 500px) {
+    #foo1{
+        display: block;
+    }
+    footer{
+        height: 95vh;background-color: #198754;
+    }
+    #a1{
+        width: 100%; background-color: #198754;
+    }
+    #a2{
+        width: 100%; background-color: #198754;
+    }
+    #foo2{
+        margin-top: 65vh;
+    }
+}
